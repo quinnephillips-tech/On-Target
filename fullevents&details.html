@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & Calendar – Hillsdale County On Target 4-H Club</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --green: #1B4332;
+            --gold: #D4A017;
+            --cream: #FAF7F0;
+            --dark: #3D2B1F;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--green);
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        /* HERO */
+        .hero {
+            margin-top: 70px;
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2rem;
+            color: var(--green);
+            margin-bottom: 1rem;
+        }
+
+        /* EVENT LIST */
+        .event-list {
+            background: white;
+            border: 2px solid var(--green);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .event-item {
+            margin-bottom: 1.2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--green);
+        }
+
+        .event-item:last-child {
+            border-bottom: none;
+        }
+
+        .event-item h3 {
+            margin: 0;
+            color: var(--green);
+        }
+
+        /* DOWNLOAD BOX */
+        .download-box {
+            background: white;
+            border: 2px solid var(--green);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .download-box a {
+            display: inline-block;
+            margin-top: 1rem;
+            background: var(--green);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .download-box a:hover {
+            background: var(--gold);
+            color: var(--dark);
+        }
+
+        /* MAP */
+        .map-box {
+            margin-top: 2rem;
+            border: 3px solid var(--green);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="leaders.html">Leaders</a>
+        <a href="members.html">Members</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Events & Calendar</h1>
+        <p>Stay up‑to‑date with meetings, workshops, and 4‑H activities</p>
+    </header>
+
+    <!-- UPCOMING EVENTS -->
+    <section>
+        <h2>Upcoming Events</h2>
+
+        <div class="event-list">
+
+            <div class="event-item">
+                <h3>Monthly Club Meeting</h3>
+                <p><strong>Date:</strong> First Tuesday of each month</p>
+                <p><strong>Location:</strong> Frontier, MI</p>
+                <p>Join us for updates, project work, and hands‑on activities.</p>
+            </div>
+
+            <div class="event-item">
+                <h3>Creative Workshop Day</h3>
+                <p><strong>Date:</strong> April 20, 2026</p>
+                <p><strong>Focus:</strong> Art, Pottery, and Creative Projects</p>
+                <p>A fun day of learning new skills and exploring creativity.</p>
+            </div>
+
+            <div class="event-item">
+                <h3>Public Speaking Practice Night</h3>
+                <p><strong>Date:</strong> May 8, 2026</p>
+                <p>Members practice speeches and demonstrations in a supportive environment.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DOWNLOAD CALENDAR -->
+    <section>
+        <div class="download-box">
+            <h2>Download Our Seasonal Calendar</h2>
+            <p>Includes meeting dates, workshops, and special events.</p>
+            <a href="club-calendar.pdf" download>Download PDF Calendar</a>
+        </div>
+    </section>
+
+    <!-- OPTIONAL GOOGLE CALENDAR EMBED -->
+    <section>
+        <h2>Google Calendar (Optional)</h2>
+        <p>If you create a Google Calendar for your club, paste the embed code here.</p>
+
+        <div class="map-box">
+            <iframe 
+                src="https://calendar.google.com/calendar/embed?src=yourcalendar%40gmail.com&ctz=America%2FDetroit" 
+                style="border:0" width="100%" height="400" frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section>
+        <h2>Meeting Location</h2>
+        <p>We meet in Frontier, Michigan. Here’s the general area:</p>
+
+        <div class="map-box">
+            <iframe 
+                width="100%" 
+                height="350" 
+                frameborder="0" 
+                style="border:0" 
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Frontier+MI" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">
+            (Replace <strong>YOUR_API_KEY</strong> with your Google Maps API key if you want the map to load.)
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Hillsdale County On Target 4-H Club
+    </footer>
+
+</body>
+</html>
