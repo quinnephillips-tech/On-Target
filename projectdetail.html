@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details – Hillsdale County On Target 4-H Club</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --green: #1B4332;
+            --gold: #D4A017;
+            --cream: #FAF7F0;
+            --dark: #3D2B1F;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--green);
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        /* HERO */
+        .hero {
+            margin-top: 70px;
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2rem;
+            color: var(--green);
+            margin-bottom: 1rem;
+        }
+
+        /* PROJECT GRID */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border: 2px solid var(--green);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid var(--green);
+            margin-bottom: 1rem;
+        }
+
+        .project-card h3 {
+            margin: 0.5rem 0;
+            color: var(--green);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="leaders.html">Leaders</a>
+        <a href="members.html">Members</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Project Details</h1>
+        <p>Explore the hands‑on learning opportunities our club offers</p>
+    </header>
+
+    <!-- PROJECTS -->
+    <section>
+        <h2>Our Project Areas</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250?text=Art" alt="Art">
+                <h3>Art</h3>
+                <p>Members explore drawing, painting, mixed media, and creative expression while learning technique and style.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250?text=Public+Speaking" alt="Public Speaking">
+                <h3>Public Speaking</h3>
+                <p>Youth build confidence through speeches, demonstrations, presentations, and communication workshops.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250?text=Creative+Projects" alt="Creative Projects">
+                <h3>Creative Projects</h3>
+                <p>Hands‑on crafts, design challenges, and imaginative builds that encourage problem‑solving and innovation.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250?text=Writing" alt="Writing">
+                <h3>Writing</h3>
+                <p>Members develop storytelling, poetry, essays, and creative writing skills through guided activities.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250?text=Pottery" alt="Pottery">
+                <h3>Pottery</h3>
+                <p>Youth learn hand‑building, sculpting, glazing, and the fundamentals of working with clay.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250?text=Painting" alt="Painting">
+                <h3>Painting</h3>
+                <p>Members experiment with color, technique, and style across a variety of painting mediums.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250?text=Livestock" alt="Livestock">
+                <h3>Livestock (Optional)</h3>
+                <p>For members interested in animals, we offer opportunities to learn about care, responsibility, and showmanship.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Hillsdale County On Target 4-H Club
+    </footer>
+
+</body>
+</html>
