@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Leaders – Hillsdale County On Target 4-H Club</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --green: #1B4332;
+            --gold: #D4A017;
+            --cream: #FAF7F0;
+            --dark: #3D2B1F;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--green);
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        /* HERO */
+        .hero {
+            margin-top: 70px;
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2rem;
+            color: var(--green);
+            margin-bottom: 1rem;
+        }
+
+        /* LEADER CARDS */
+        .leader-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .leader-card {
+            background: white;
+            border: 2px solid var(--green);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .leader-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--green);
+            margin-bottom: 1rem;
+        }
+
+        .leader-card h3 {
+            margin: 0.5rem 0;
+            color: var(--green);
+        }
+
+        .leader-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="leaders.html">Leaders</a>
+        <a href="members.html">Members</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Meet Our Leaders</h1>
+        <p>Dedicated volunteers guiding our 4‑H youth with passion and purpose</p>
+    </header>
+
+    <!-- LEADERS SECTION -->
+    <section>
+        <h2>Club Leadership Team</h2>
+
+        <div class="leader-grid">
+
+            <div class="leader-card">
+                <img src="https://via.placeholder.com/200?text=Leader+Photo" alt="Leader Photo">
+                <h3>Jane Doe</h3>
+                <p><strong>Club Leader</strong></p>
+                <p>Jane has been a 4‑H volunteer for over 10 years and loves helping youth explore creativity and leadership.</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="https://via.placeholder.com/200?text=Leader+Photo" alt="Leader Photo">
+                <h3>Mark Thompson</h3>
+                <p><strong>Assistant Leader</strong></p>
+                <p>Mark supports project areas including Art, Creative Projects, and Public Speaking.</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="https://via.placeholder.com/200?text=Leader+Photo" alt="Leader Photo">
+                <h3>Sarah Williams</h3>
+                <p><strong>Project Coordinator</strong></p>
+                <p>Sarah helps organize project workshops and encourages youth to explore new skills.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+        <h2>Contact the Leadership Team</h2>
+        <p>Email us at <strong>ontarget4h@example.com</strong> with questions about joining, projects, or meetings.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Hillsdale County On Target 4-H Club
+    </footer>
+
+</body>
+</html>
