@@ -1,1 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hillsdale County On Target 4-H Club</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --green: #1B4332;
+            --gold: #D4A017;
+            --cream: #FAF7F0;
+            --dark: #3D2B1F;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--green);
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        /* HERO */
+        .hero {
+            margin-top: 70px;
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem;
+        }
+
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2rem;
+            color: var(--green);
+            margin-bottom: 1rem;
+        }
+
+        /* PROJECT GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border: 2px solid var(--green);
+            padding: 1.2rem;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--green);
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            border: 2px solid var(--green);
+            object-fit: cover;
+            height: 150px;
+        }
+
+        /* CAROUSEL */
+        .carousel {
+            position: relative;
+            max-width: 900px;
+            margin: 2rem auto;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 3px solid var(--green);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-track img {
+            width: 100%;
+            flex-shrink: 0;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--green);
+            color: white;
+            border: none;
+            padding: 0.8rem 1rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .carousel-btn:hover {
+            background: var(--gold);
+        }
+
+        .carousel-btn.prev {
+            left: 10px;
+        }
+
+        .carousel-btn.next {
+            right: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .carousel-track img {
+                height: 250px;
+            }
+        }
+
+        /* MEETINGS */
+        .meetings p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: white;
+            border: 2px solid var(--green);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .contact-box p {
+            margin: 0.4rem 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#meetings">Meetings</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <h1>Hillsdale County On Target 4-H Club</h1>
+        <p>Creativity • Learning • Growth • Fun</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Our Club</h2>
+        <p>
+            Based in Frontier, MI, the Hillsdale County On Target 4-H Club is a welcoming 
+            community for youth ages 5–19. We focus on creativity, learning, growth, and fun 
+            through both livestock and non-livestock projects. Members explore Art, Public 
+            Speaking, Creative Projects, Writing, Pottery, Painting, and more—all while 
+            building confidence, leadership, and lifelong skills.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects We Offer</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Art</h3>
+                <p>Explore drawing, painting, mixed media, and creative expression.</p>
+            </div>
+
+            <div class="card">
+                <h3>Public Speaking</h3>
+                <p>Build confidence through speeches, presentations, and demonstrations.</p>
+            </div>
+
+            <div class="card">
+                <h3>Creative Projects</h3>
+                <p>Hands-on crafts, design challenges, and imaginative builds.</p>
+            </div>
+
+            <div class="card">
+                <h3>Writing</h3>
+                <p>Develop storytelling, poetry, essays, and creative writing skills.</p>
+            </div>
+
+            <div class="card">
+                <h3>Pottery</h3>
+                <p>Learn hand-building, sculpting, and glazing techniques.</p>
+            </div>
+
+            <div class="card">
+                <h3>Painting</h3>
+                <p>Experiment with color, style, and technique across mediums.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+        <p>Here are some example placeholders — you can replace them with real club photos.</p>
+
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200?text=4-H+Project" alt="Gallery Image">
+            <img src="https://via.placeholder.com/300x200?text=Art+Project" alt="Gallery Image">
+            <img src="https://via.placeholder.com/300x200?text=Club+Meeting" alt="Gallery Image">
+            <img src="https://via.placeholder.com/300x200?text=Creative+Work" alt="Gallery Image">
+        </div>
+    </section>
+
+    <!-- CAROUSEL (NEW) -->
+    <section id="carousel">
+        <h2>Photo Carousel</h2>
+        <p>Swipe or click through photos from our 4‑H activities.</p>
+
+        <div class="carousel">
+            <button class="carousel-btn prev">&#10094;</button>
+
+            <div class="carousel-track">
+                <img src="https://via.placeholder.com/900x500?text=4-H+Project" alt="Slide 1">
+                <img src="https://via.placeholder.com/900x500?text=Art+Project" alt="Slide 2">
+                <img src="https://via.placeholder.com/900x500?text=Club+Meeting" alt="Slide 3">
+                <img src="https://via.placeholder.com/900x500?text=Creative+Work" alt="Slide 4">
+            </div>
+
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- MEETINGS -->
+    <section id="meetings" class="meetings">
+        <h2>Meetings</h2>
+        <p><strong>When:</strong> Monthly meetings (dates announced seasonally)</p>
+        <p><strong>Where:</strong> Frontier, Michigan</p>
+        <p><strong>Who:</strong> Open to youth ages 5–19</p>
+
+        <p style="margin-top:1rem;">
+            <a href="club-calendar.pdf" download style="color: var(--green); font-weight:600;">
+                Download our seasonal meeting calendar (PDF)
+            </a>
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+            <p><strong>Club Leader:</strong> Jane Doe</p>
+            <p><strong>Email:</strong> ontarget4h@example.com</p>
+            <p><strong>Phone:</strong> (555) 123‑4567</p>
+            <p><strong>Location:</strong> Frontier, MI</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Hillsdale County On Target 4-H Club
+    </footer>
+
+    <!-- CAROUSEL SCRIPT -->
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+
+        let index = 0;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            index = (index + 1) % slides.length;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            index = (index - 1 + slides.length) % slides.length;
+            updateCarousel();
+        });
+
+        // Swipe support for mobile
+        let startX = 0;
+
+        track.addEventListener('touchstart', e => {
+            startX = e.touches[0].clientX;
+        });
+
+        track.addEventListener('touchend', e => {
+            let endX = e.changedTouches[0].clientX;
+            if (startX - endX > 50) nextBtn.click();
+            if (endX - startX > 50) prevBtn.click();
+        });
+    </script>
+
+</body>
+</html>
