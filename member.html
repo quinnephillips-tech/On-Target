@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Members – Hillsdale County On Target 4-H Club</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --green: #1B4332;
+            --gold: #D4A017;
+            --cream: #FAF7F0;
+            --dark: #3D2B1F;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--green);
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        /* HERO */
+        .hero {
+            margin-top: 70px;
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2rem;
+            color: var(--green);
+            margin-bottom: 1rem;
+        }
+
+        /* MEMBER GROUP CARDS */
+        .group-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .group-card {
+            background: white;
+            border: 2px solid var(--green);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .group-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .group-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--green);
+            margin-bottom: 1rem;
+        }
+
+        .group-card h3 {
+            margin: 0.5rem 0;
+            color: var(--green);
+        }
+
+        /* JOIN BOX */
+        .join-box {
+            background: white;
+            border: 2px solid var(--green);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .join-box a {
+            display: inline-block;
+            margin-top: 1rem;
+            background: var(--green);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .join-box a:hover {
+            background: var(--gold);
+            color: var(--dark);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="leaders.html">Leaders</a>
+        <a href="members.html">Members</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Our Members</h1>
+        <p>Growing, learning, and creating together as a 4‑H family</p>
+    </header>
+
+    <!-- WHO WE ARE -->
+    <section>
+        <h2>Who We Are</h2>
+        <p>
+            The Hillsdale County On Target 4‑H Club is home to youth ages 5–19 who love to learn, 
+            create, explore new skills, and support each other. Our members come from all over 
+            Frontier and the surrounding area, bringing their unique talents and interests to the club.
+        </p>
+    </section>
+
+    <!-- MEMBER GROUPS -->
+    <section>
+        <h2>Member Groups</h2>
+
+        <div class="group-grid">
+
+            <div class="group-card">
+                <img src="https://via.placeholder.com/200?text=Cloverbuds" alt="Cloverbuds">
+                <h3>Cloverbuds (Ages 5–7)</h3>
+                <p>Our youngest members explore creativity, teamwork, and hands‑on fun in a safe, supportive environment.</p>
+            </div>
+
+            <div class="group-card">
+                <img src="https://via.placeholder.com/200?text=Juniors" alt="Juniors">
+                <h3>Juniors (Ages 8–12)</h3>
+                <p>Juniors dive deeper into projects, build confidence, and discover new interests through guided learning.</p>
+            </div>
+
+            <div class="group-card">
+                <img src="https://via.placeholder.com/200?text=Teens" alt="Teens">
+                <h3>Teens (Ages 13–19)</h3>
+                <p>Teen members take on leadership roles, mentor younger youth, and develop advanced project skills.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHAT MEMBERS DO -->
+    <section>
+        <h2>What Members Do</h2>
+        <p>
+            Members participate in hands‑on projects, workshops, community service, public speaking, 
+            art, creative projects, and more. Whether they’re learning pottery techniques, preparing 
+            a presentation, or helping at a club event, every member grows in confidence and skill.
+        </p>
+    </section>
+
+    <!-- JOIN US -->
+    <section>
+        <div class="join-box">
+            <h2>Interested in Joining?</h2>
+            <p>We welcome new members year‑round! Learn more about how to get involved.</p>
+            <a href="events.html">See Meetings & Events</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Hillsdale County On Target 4-H Club
+    </footer>
+
+</body>
+</html>
